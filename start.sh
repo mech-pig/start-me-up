@@ -1,8 +1,10 @@
 # usr/bin/sh
 
 NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-START_ME_UP_REPO="git@github.com:MechanicalPig/start-me-up.git"
 INSTALL_FOLDER="$HOME/tmp/start-me-up_$NOW"
+START_ME_UP_REPO="git@github.com:MechanicalPig/start-me-up.git"
+PLAYBOOK_FILE="playbook.yml"
+HOSTS_FILE="hosts"
 
 echo "---------------------------"
 echo "🚀  Time to start you up! 🚀"
@@ -23,6 +25,11 @@ echo "\t$INSTALL_FOLDER"
 echo "⏳  Cloning git repository..."
 git clone $START_ME_UP_REPO $INSTALL_FOLDER
 echo "✅  repository cloned!"
+
+echo "⏳  Executing playbook..."
+cd $INSTALL_FOLDER
+ansible-playbook -i $HOSTS_FILE $PLAYBOOK_FILE --verbose
+echo "✅  playbook succesfully executed!"
 
 echo "🚿  Cleaning everything up..."
 rm -rf $INSTALL_FOLDER
