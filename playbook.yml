@@ -1,4 +1,4 @@
 ---
-- hosts: local
+- hosts: all
   roles:
     - setup_mac_os

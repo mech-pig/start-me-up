@@ -1,4 +1,4 @@
+---
 -
-  name: hello world
-  command: echo 'hello world!'
-  register: foo
+  name: install homebrew
+  include: homebrew.yml

@@ -6,21 +6,23 @@ START_ME_UP_REPO="git@github.com:MechanicalPig/start-me-up.git"
 PLAYBOOK_FILE="playbook.yml"
 HOSTS_FILE="hosts"
 
+PATH=$PATH:"$HOME/Library/Python/2.7/bin"
+
 echo "---------------------------"
 echo "🚀  Time to start you up! 🚀"
 echo "---------------------------"
 
+echo "👉  Temporary installation files will be stored here:"
+echo "\t$INSTALL_FOLDER"
+
 echo "⏳  Installing pip..."
-easy_install pip
-pip install --upgrade pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py --user
 echo "✅  pip installed!"
 
 echo "⏳  Installing ansible..."
-pip install ansible
+pip install ansible --user
 echo "✅  ansible installed!"
-
-echo "👉  Temporary installation files will be stored here:"
-echo "\t$INSTALL_FOLDER"
 
 echo "⏳  Cloning git repository..."
 git clone $START_ME_UP_REPO $INSTALL_FOLDER
