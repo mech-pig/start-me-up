@@ -1,0 +1,4 @@
+-
+  name: hello world
+  command: echo 'hello world!'
+  register: foo
