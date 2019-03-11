@@ -1,6 +1,6 @@
 homedir: "{{ lookup('env', 'HOME') }}"
 
-dotfilesdir: "{{ homedir }}/.dotfiles2"
+dotfilesdir: "{{ homedir }}/.dotfiles"
 
 dotfiles:
   - '.atom'
