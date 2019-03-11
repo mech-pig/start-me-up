@@ -2,3 +2,6 @@
 -
   name: install homebrew
   include: homebrew.yml
+-
+  name: set dotfiles
+  include: dotfiles.yml
