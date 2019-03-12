@@ -2,12 +2,12 @@
 -
   name: clone dotfiles repo
   git:
-    repo: https://github.com/MechanicalPig/.dotfiles.git
-    dest: "{{ dotfilesdir }}"
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_dir }}"
 -
   name: create symlinks to home directory
   file:
-    src: "{{ dotfilesdir }}/{{ item }}"
-    dest: "{{ homedir }}/{{ item }}"
+    src: "{{ dotfiles_dir }}/{{ item }}"
+    dest: "{{ home_dir }}/{{ item }}"
     state: link
   with_items: "{{ dotfiles }}"

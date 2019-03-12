@@ -1,6 +1,7 @@
-homedir: "{{ lookup('env', 'HOME') }}"
+home_dir: "{{ lookup('env', 'HOME') }}"
 
-dotfilesdir: "{{ homedir }}/.dotfiles"
+dotfiles_dir: "{{ home_dir }}/Developer/personal/dotfiles"
+dotfiles_repo: https://github.com/MechanicalPig/dotfiles.git
 
 dotfiles:
   - '.atom'
