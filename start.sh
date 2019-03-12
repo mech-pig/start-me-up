@@ -19,6 +19,7 @@ cd $INSTALL_FOLDER
 echo "⏳  Installing pip..."
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
+rm get-pip.py
 echo "✅  pip installed!"
 
 echo "⏳  Installing ansible..."
