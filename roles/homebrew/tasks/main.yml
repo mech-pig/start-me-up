@@ -1,0 +1,12 @@
+---
+# install and update homebrew and cask
+-
+  name: install homebrew
+  shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+  args:
+    creates: /usr/local/bin/brew
+-
+  name: ensure homebrew is updated
+  homebrew:
+    state: latest
+    update_homebrew: yes
