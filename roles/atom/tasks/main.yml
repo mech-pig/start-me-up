@@ -1,0 +1,21 @@
+-
+  name: install atom
+  homebrew_cask:
+    name: atom
+    state: installed
+-
+  name: simlink dotfiles to home dir
+  file:
+    src: "{{ dotfiles_dir }}/.atom"
+    dest: "{{ home_dir }}/.atom"
+    state: link
+-
+  name: install packages
+  shell: >
+    apm list -ip --bare | grep -E '^{{ item }}@'
+    && echo 'already installed.'
+    || apm install '{{ item }}'
+  with_items:
+    - package-sync
+  register: apm_result
+  changed_when: "'already installed.' not in apm_result.stdout"

@@ -4,7 +4,6 @@ dotfiles_dir: "{{ home_dir }}/Developer/personal/dotfiles"
 dotfiles_repo: https://github.com/MechanicalPig/dotfiles.git
 
 dotfiles:
-  - '.atom'
   - '.gitconfig'
   - '.zshrc'
 
@@ -27,7 +26,6 @@ homebrew_packages:
   - zsh
 
 homebrew_cask_applications:
-  - atom
   - cryptomator
   - docker
   - docker-compose
