@@ -1,0 +1,7 @@
+---
+# clone dotfiles repository
+-
+  name: clone dotfiles repo
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_dir }}"
