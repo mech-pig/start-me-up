@@ -1,16 +1,5 @@
 ---
 -
-  name: install homebrew packages
-  homebrew:
-    name: "{{ homebrew_packages }}"
-    state: latest
--
-  name: install homebrew cask applications
-  homebrew_cask:
-    name: "{{ item }}"
-    state: installed
-  with_items: "{{ homebrew_cask_applications }}"
--
   name: create symlinks to home directory
   file:
     src: "{{ dotfiles_dir }}/{{ item }}"

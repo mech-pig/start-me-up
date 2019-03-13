@@ -7,34 +7,34 @@ dotfiles:
   - '.gitconfig'
   - '.zshrc'
 
-homebrew_packages:
-  - awscli
-  - curl
-  - git
-#  - git-chglog tap needed!
-  - hledger
-  - httpie
-  - kubernetes-cli
-  - kubernetes-helm
-  - nvm
-  - openssl
-  - pyenv
-  - pyenv-virtualenv
-  - terraform
-  - tree
-  - wget
-  - zsh
-
-homebrew_cask_applications:
-  - cryptomator
-  - docker
-  - docker-compose
-  - dropbox
-  - firefox
-  - gog-galaxy
-  - google-chrome
-  - iterm2
-  - minikube
-  - slack
-  - toggl
-  - tunnelblick
+development_tools:
+  homebrew_packages:
+    - awscli
+    - curl
+    - git
+    - git-chglog
+    - hledger
+    - httpie
+    - kubernetes-cli
+    - kubernetes-helm
+    - nvm
+    - openssl
+    - pyenv
+    - pyenv-virtualenv
+    - terraform
+    - tree
+    - wget
+    - zsh
+  homebrew_cask_applications:
+    - cryptomator
+    - docker
+    - docker-compose
+    - dropbox
+    - firefox
+    - gog-galaxy
+    - google-chrome
+    - iterm2
+    - minikube
+    - slack
+    - toggl
+    - tunnelblick
