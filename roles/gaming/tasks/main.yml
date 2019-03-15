@@ -1,0 +1,7 @@
+---
+-
+  name: install homebrew cask applications
+  homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ gaming.homebrew_cask_applications }}"

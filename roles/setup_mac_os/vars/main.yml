@@ -31,10 +31,14 @@ development_tools:
     - docker-compose
     - dropbox
     - firefox
-    - gog-galaxy
     - google-chrome
     - iterm2
     - minikube
     - slack
     - toggl
     - tunnelblick
+
+gaming:
+  homebrew_cask_applications:
+    - gog-galaxy
+    - steam
