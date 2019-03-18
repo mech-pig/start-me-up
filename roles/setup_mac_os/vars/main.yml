@@ -24,6 +24,7 @@ development_tools:
     - terraform
     - tree
     - wget
+    - zlib
     - zsh
   homebrew_cask_applications:
     - cryptomator
