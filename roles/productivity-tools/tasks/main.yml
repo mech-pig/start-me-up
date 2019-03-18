@@ -1,0 +1,12 @@
+---
+-
+  name: install homebrew packages
+  homebrew:
+    name: "{{ productivity_tools.homebrew_packages }}"
+    state: latest
+-
+  name: install homebrew cask applications
+  homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ productivity_tools.homebrew_cask_applications }}"

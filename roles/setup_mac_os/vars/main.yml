@@ -27,19 +27,25 @@ development_tools:
     - zlib
     - zsh
   homebrew_cask_applications:
-    - cryptomator
     - docker
     - docker-compose
-    - dropbox
-    - firefox
-    - google-chrome
     - iterm2
     - minikube
-    - slack
-    - toggl
-    - tunnelblick
 
 gaming:
   homebrew_cask_applications:
     - gog-galaxy
     - steam
+
+productivity_tools:
+  homebrew_packages:
+    - bitwarden-cli
+  homebrew_cask_applications:
+    - bitwarden
+    - cryptomator
+    - dropbox
+    - firefox
+    - google-chrome
+    - slack
+    - toggl
+    - tunnelblick

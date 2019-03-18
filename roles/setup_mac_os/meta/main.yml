@@ -1,7 +1,8 @@
 ---
 dependencies:
   - { role: atom }
-  - { role: gaming }
   - { role: development-tools }
   - { role: dotfiles }
+  - { role: gaming }
   - { role: homebrew }
+  - { role: productivity-tools }
