@@ -17,6 +17,7 @@ development_tools:
     - httpie
     - kubernetes-cli
     - kubernetes-helm
+    - libpq
     - nvm
     - openssl
     - pyenv
