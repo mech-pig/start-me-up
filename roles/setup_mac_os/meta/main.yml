@@ -6,3 +6,4 @@ dependencies:
   - { role: gaming }
   - { role: homebrew }
   - { role: productivity-tools }
+  - { role: python }

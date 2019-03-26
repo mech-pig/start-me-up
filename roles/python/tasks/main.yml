@@ -1,0 +1,22 @@
+-
+  name: check if poetry is installed and updated
+  command: "{{ poetry_bin_folder }}/poetry self:update"
+  register: poetry_check
+  ignore_errors: True
+-
+  name: install poetry
+  block:
+    -
+      name: download poetry installer
+      get_url:
+        url: https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py
+        dest: /tmp/get-poetry.py
+    -
+      name: execute installer
+      command: python /tmp/get-poetry.py
+    -
+      name: remove poetry installer
+      file:
+        path: /tmp/get-poetry.py
+        state: absent
+  when: poetry_check is failed
