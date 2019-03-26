@@ -26,11 +26,9 @@ development_tools:
     - tree
     - wget
     - zlib
-    - zsh
   homebrew_cask_applications:
     - docker
     - docker-compose
-    - iterm2
     - minikube
 
 gaming:

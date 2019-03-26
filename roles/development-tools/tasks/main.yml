@@ -17,3 +17,6 @@
     name: "{{ item }}"
     state: latest
   with_items: "{{ development_tools.homebrew_cask_applications }}"
+-
+  name: install terminal
+  include: terminal.yml

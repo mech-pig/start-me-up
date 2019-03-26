@@ -1,0 +1,10 @@
+-
+  name: install iterm2
+  homebrew_cask:
+    name: iterm2
+    state: latest
+-
+  name: install zsh shell
+  homebrew:
+    name: zsh
+    state: latest
