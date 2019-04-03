@@ -8,3 +8,7 @@
   homebrew:
     name: zsh
     state: latest
+-
+  name: install zplug
+  homebrew:
+    name: zplug
