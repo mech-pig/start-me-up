@@ -30,6 +30,7 @@ development_tools:
     - docker
     - docker-compose
     - minikube
+    - virtualbox
 
 gaming:
   homebrew_cask_applications:
