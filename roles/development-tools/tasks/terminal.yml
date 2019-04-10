@@ -4,11 +4,11 @@
     name: iterm2
     state: latest
 -
-  name: install zsh shell
+  name: install zsh shell and terminal utilities
   homebrew:
-    name: zsh
+    name:
+      - fd
+      - fzf
+      - zplug
+      - zsh
     state: latest
--
-  name: install zplug
-  homebrew:
-    name: zplug
