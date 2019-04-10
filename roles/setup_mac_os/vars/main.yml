@@ -11,6 +11,7 @@ development_tools:
   homebrew_packages:
     - awscli
     - curl
+    - fzf
     - git
     - git-chglog
     - hledger
