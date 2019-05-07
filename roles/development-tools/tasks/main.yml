@@ -20,3 +20,5 @@
 -
   name: install terminal
   include: terminal.yml
+- name: install typography
+  include: typography.yml
