@@ -7,3 +7,4 @@ dependencies:
   - { role: homebrew }
   - { role: productivity-tools }
   - { role: python }
+  - { role: windows-support }

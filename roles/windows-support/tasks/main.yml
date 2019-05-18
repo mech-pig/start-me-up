@@ -1,0 +1,12 @@
+-
+  name: install wine
+  homebrew:
+    name:
+      - wine
+      - winetricks
+    state: latest
+-
+  name: install xquartz
+  homebrew_cask:
+    name: xquartz
+    state: latest
