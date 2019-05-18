@@ -1,6 +1,6 @@
 -
   name: check if poetry is installed and updated
-  command: "{{ poetry_bin_folder }}/poetry self:update"
+  command: "poetry self:update"
   register: poetry_check
   ignore_errors: True
 -

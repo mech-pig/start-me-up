@@ -1,1 +1,0 @@
-poetry_bin_folder: "{{ home_dir }}/.poetry/bin"
