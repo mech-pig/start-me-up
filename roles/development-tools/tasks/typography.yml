@@ -13,3 +13,8 @@
       - otfcc-mac64
       - ttfautohint
     state: latest
+-
+  name: install latex
+  homebrew_cask:
+    name: mactex
+    state: latest
