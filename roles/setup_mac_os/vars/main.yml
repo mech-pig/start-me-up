@@ -43,6 +43,7 @@ productivity_tools:
     - bitwarden-cli
   homebrew_cask_applications:
     - bitwarden
+    - calibre
     - cryptomator
     - dropbox
     - firefox
