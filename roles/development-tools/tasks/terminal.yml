@@ -7,8 +7,5 @@
   name: install zsh shell and terminal utilities
   homebrew:
     name:
-      - fd
-      - fzf
-      - zplug
       - zsh
     state: latest
